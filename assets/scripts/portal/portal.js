@@ -25,7 +25,7 @@ function initQrScanner(){
   qi.onclick = function(){
     return ie.click()
   }
-  ie.addEventListener('change', e => {
+  ie.addEventListener('change', function(e){
     if (!e.target.files || !e.target.files.length) return;
     var imageFile = e.target.files[0];
     vi = document.getElementsByName('code')[0]
