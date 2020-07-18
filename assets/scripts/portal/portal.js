@@ -25,7 +25,13 @@ function initQrScanner(){
   s.setAttribute('src','/plugins/voucher-qr-reader/assets/scripts/html5-qrcode.min.js');
   document.body.appendChild(s);
   qi.onclick = function(){
-    return ie.click()
+    if(window.JSInterface && window.JSInterface.scanQr){
+      if(window.JSInterface.scanQr()){
+        ie.click()  
+      }
+    }else{
+      ie.click()
+    }
   }
   ie.addEventListener('change', function(e){
     if (!e.target.files || !e.target.files.length) return;
