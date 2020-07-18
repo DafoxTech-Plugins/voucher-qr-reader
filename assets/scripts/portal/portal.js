@@ -3,7 +3,7 @@ function initQrScanner(){
   qi.classList.add("fa");
   qi.classList.add("fa-qrcode");
   qi.classList.add("qr-icon");
-  qi.style = 'left: 192px; position: absolute; margin-left: -172px; font-size: 28px; cursor: pointer; z-index: 9999; top: 4px;';
+  qi.style = 'left: 192px; position: absolute; margin-left: -172px; font-size: 28px; cursor: pointer; top: 4px;';
   qi.id = 'qr-btn'
   var vi = document.getElementsByName('code')[0]
   if(!vi) return;
