@@ -13,7 +13,7 @@ function initQrScanner(){
   var ie = document.createElement('input')
   ie.type = 'file';
   ie.id = 'qr-input-file';
-  ie.accept = 'image/*';
+  ie.accept = 'image/*;capture=camera';
   ie.style = 'opacity:0;width:1px;'
   var html5QrCode;
   s.onload = function(){
