@@ -15,6 +15,7 @@ function initQrScanner(){
   ie.id = 'qr-input-file';
   ie.accept = 'image/*';
   ie.capture = 'environment';
+  ie.setAttribute("capture", "environment");
   ie.style = 'opacity:0;width:1px;'
   var html5QrCode;
   s.onload = function(){
