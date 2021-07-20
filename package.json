@@ -1,0 +1,26 @@
+{
+  "name": "voucher-qr-reader",
+  "version": "1.0.3",
+  "description": "Voucher QR Code Reader for AdoPisoft Captive portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "python $APPDIR/python-scripts/plugin-postinstall.py $(basename \"$PWD\") $(PWD)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/adopisowifi/voucher-qr-reader.git"
+  },
+  "keywords": [
+    "ado",
+    "voucher",
+    "qr",
+    "reader"
+  ],
+  "author": "arnel.lenteria@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/adopisowifi/voucher-qr-reader/issues"
+  },
+  "homepage": "https://bitbucket.org/adopisowifi/voucher-qr-reader#readme"
+}
