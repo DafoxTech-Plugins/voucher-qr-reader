@@ -43,6 +43,7 @@ function initQrScanner(){
     .then(function(code){
       vi.value = code
       vi.dispatchEvent(new Event("input"))
+      vi.dispatchEvent(new Event("change"))
       setTimeout(function(){
         vi.form.dispatchEvent(new Event("submit"))
       })
@@ -51,6 +52,7 @@ function initQrScanner(){
       alert("Voucher QR code can't be recognized!")
       vi.value = ""
       vi.dispatchEvent(new Event("input"))
+      vi.dispatchEvent(new Event("change"))
       console.log(`Error scanning file. Reason: ${err}`)
     }).finally(function(){
       ie.value = null;
