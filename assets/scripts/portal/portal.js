@@ -54,7 +54,7 @@
       html5QrCode = new Html5Qrcode("reader");
       vi.parentElement.appendChild(qi)
     }
-    s.setAttribute('src','/public/plugins/voucher-qr-reader/assets/scripts/html5-qrcode.min.js');
+    s.setAttribute('src','/plugins/voucher-qr-reader/assets/scripts/html5-qrcode.min.js');
     document.body.appendChild(s);
     qi.onclick = function(){
       if(window.JSInterface && window.JSInterface.scanQr){
