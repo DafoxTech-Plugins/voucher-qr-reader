@@ -1,5 +1,1 @@
-'use strict'
-module.exports = {
-  async init () {
-  }
-}
+"use strict";module.exports={async init(){}};
